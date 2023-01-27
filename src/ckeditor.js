@@ -33,6 +33,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -64,7 +65,8 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Underline
+	Underline,
+	Strikethrough
 ];
 
 // Editor configuration.
@@ -76,6 +78,7 @@ ClassicEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline',
+			'strikethrough',
 			'link',
 			'bulletedList',
 			'numberedList',

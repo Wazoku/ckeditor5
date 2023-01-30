@@ -71,6 +71,10 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
+	fontSize: {
+		options: [],
+		supportAllValues: true
+	},
 	toolbar: {
 		items: [
 			'heading',
@@ -79,6 +83,7 @@ ClassicEditor.defaultConfig = {
 			'italic',
 			'underline',
 			'strikethrough',
+			'fontSize',
 			'link',
 			'bulletedList',
 			'numberedList',

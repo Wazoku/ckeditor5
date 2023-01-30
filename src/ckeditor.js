@@ -32,7 +32,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
-import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+// import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 
@@ -66,7 +66,7 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Underline,
+	// Underline,
 	Strikethrough,
 	Font
 ];
@@ -74,7 +74,15 @@ ClassicEditor.builtinPlugins = [
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	fontSize: {
-		options: [],
+		options: [
+			9,
+			11,
+			13,
+			'default',
+			17,
+			19,
+			21
+		],
 		supportAllValues: true
 	},
 	toolbar: {
@@ -83,7 +91,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'underline',
+			// 'underline',
 			'strikethrough',
 			'fontSize',
 			'fontFamily',

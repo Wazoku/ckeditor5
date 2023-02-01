@@ -32,12 +32,6 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
-import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
-import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
-import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
-import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
-import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -68,13 +62,7 @@ ClassicEditor.builtinPlugins = [
 	PictureEditing,
 	Table,
 	TableToolbar,
-	TextTransformation,
-	Underline,
-	Strikethrough,
-	Subscript,
-	Superscript,
-	RemoveFormat,
-	Font
+	TextTransformation
 ];
 
 // Editor configuration.
@@ -85,15 +73,6 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'underline',
-			'strikethrough',
-			'subscript',
-			'superscript',
-			'removeFormat',
-			'fontSize',
-			'fontFamily',
-			'fontColor',
-			'fontBackgroundColor',
 			'link',
 			'bulletedList',
 			'numberedList',
